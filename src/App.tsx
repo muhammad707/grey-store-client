@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/header/header.component";
+import HomePage from "./pages/homepage/homepage.component";
 import Spinner from "./components/spinner/spinner.component";
 
 const App: React.FC = () => {
@@ -11,7 +12,7 @@ const App: React.FC = () => {
       <Header />
       <Switch>
         <Suspense fallback={<Spinner />}>
-          <Route />
+          <Route exact path="/" component={HomePage} />
         </Suspense>
       </Switch>
     </div>
