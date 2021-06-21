@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import directoryReducer from "./directory/directory.slice";
+import shopReducer from "./shop/shop.slice";
 
 export const store = configureStore({
   reducer: {
     directory: directoryReducer,
+    shop: shopReducer,
   },
 });
 

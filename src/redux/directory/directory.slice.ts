@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
-import { RootState, AppThunk } from "../store";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { RootState } from "../store";
 import { Directory } from "./directory.interface";
 import { fetchDirectories } from "./directory.api";
 
